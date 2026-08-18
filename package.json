@@ -1,0 +1,40 @@
+{
+  "name": "@protevix/dpdp-web-check",
+  "version": "0.3.1",
+  "description": "Passive, zero-dependency observability check that maps a website's public security and privacy posture to India's DPDP Act 2023 and DPDP Rules 2025. Bring your own LLM key for narrative output.",
+  "keywords": [
+    "dpdp",
+    "dpdp-act",
+    "india",
+    "privacy",
+    "compliance",
+    "security-headers",
+    "data-protection"
+  ],
+  "license": "Apache-2.0",
+  "author": "Protevix Infosec",
+  "homepage": "https://github.com/protevixinfosec/dpdp-web-check",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/protevixinfosec/dpdp-web-check.git"
+  },
+  "type": "commonjs",
+  "main": "src/index.js",
+  "bin": {
+    "dpdp-web-check": "bin/dpdp-web-check.js"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "skills/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {},
+  "scripts": {
+    "start": "node bin/dpdp-web-check.js"
+  }
+}
