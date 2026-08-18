@@ -2,7 +2,7 @@
 
 **Passive DPDP posture check for any website. Zero dependencies. Your key, your machine.**
 
-India's DPDP Rules 2025 were notified on 13 November 2025. The substantive obligations under Section 8 — Rule 6 security safeguards and Rule 7 breach intimation become enforceable at the end of an 18-month runway in May 2027. Most Indian businesses have no idea what their public web surface looks like against that.
+India's DPDP Rules 2025 were notified on 13 November 2025. The substantive obligations under Section 8 - Rule 6 security safeguards and Rule 7 breach intimation become enforceable at the end of an 18-month runway in May 2027. Most Indian businesses have no idea what their public web surface looks like against that.
 
 Header scanners will tell you about CSP. None of them will tell you that **Section 13 requires a readily available grievance redressal mechanism**, or that **Rule 14 requires you to publish how a Data Principal exercises their rights**, or that your privacy notice is a GDPR template that never mentions the Act you're actually governed by.
 
