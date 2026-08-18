@@ -78,11 +78,11 @@ npx @protevix/dpdp-web-check example.com
 npm install -g @protevix/dpdp-web-check
 dpdp-web-check example.com
 
-# Markdown report for your compliance folder
-dpdp-web-check example.com --format md --out dpdp-report.md
+# Installed
+npm install -g @protevix/dpdp-web-check
+dpdp-web-check example.com --format html --out
 
-# JSON for CI
-dpdp-web-check example.com --format json --out result.json
+# auto-named: dpdp-report-example.com-2026-08-18.html
 ```
 
 Exit codes: `0` clean, `1` one or more failures, `2` target unreachable. Wire it into CI as a gate if you want.
