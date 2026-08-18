@@ -77,9 +77,6 @@ npx @protevix/dpdp-web-check example.com
 # Installed
 npm install -g @protevix/dpdp-web-check
 dpdp-web-check example.com
-
-# Installed
-npm install -g @protevix/dpdp-web-check
 dpdp-web-check example.com --format html --out
 
 # auto-named: dpdp-report-example.com-2026-08-18.html
