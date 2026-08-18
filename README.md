@@ -2,7 +2,7 @@
 
 **Passive DPDP posture check for any website. Zero dependencies. Your key, your machine.**
 
-India's DPDP Rules 2025 were notified on 13 November 2025. The substantive obligations under Section 8 — Rule 6 security safeguards and Rule 7 breach intimation — become enforceable at the end of an 18-month runway in May 2027. Most Indian businesses have no idea what their public web surface looks like against that.
+India's DPDP Rules 2025 were notified on 13 November 2025. The substantive obligations under Section 8 — Rule 6 security safeguards and Rule 7 breach intimation become enforceable at the end of an 18-month runway in May 2027. Most Indian businesses have no idea what their public web surface looks like against that.
 
 Header scanners will tell you about CSP. None of them will tell you that **Section 13 requires a readily available grievance redressal mechanism**, or that **Rule 14 requires you to publish how a Data Principal exercises their rights**, or that your privacy notice is a GDPR template that never mentions the Act you're actually governed by.
 
@@ -38,9 +38,9 @@ dpdp-web-check example.com --format html --out
 # auto-named: dpdp-report-example.com-2026-08-18.html
 ```
 
-The HTML report is fully self-contained — no external CSS, fonts, or scripts, nothing loaded from a CDN. It opens the same whether you're online or not, months from now, on any machine. Colour-coded findings, a score ring, clause references you can hover for the full legal text, and the Protevix Infosec logo and contact embedded directly as base64 so branding survives even when the file is emailed or saved standalone. `--format html` always saves to a file automatically, with or without `--out`, since a raw HTML document dumped into a terminal isn't something you can read.
+The HTML report is fully self-contained no external CSS, fonts, or scripts, nothing loaded from a CDN. It opens the same whether you're online or not, months from now, on any machine. Colour-coded findings, a score ring, clause references you can hover for the full legal text, and the Protevix Infosec logo and contact embedded directly as base64 so branding survives even when the file is emailed or saved standalone. `--format html` always saves to a file automatically, with or without `--out`, since a raw HTML document dumped into a terminal isn't something you can read.
 
-There's no direct PDF export. Doing that without Puppeteer/Chromium would mean either losing the zero-dependency guarantee or hand-rolling a fragile PDF writer — neither is worth it for a report you can open and use *Print → Save as PDF* on in one extra click from the HTML file.
+There's no direct PDF export. Doing that without Puppeteer/Chromium would mean either losing the zero-dependency guarantee or hand-rolling a fragile PDF writer neither is worth it for a report you can open and use *Print → Save as PDF* on in one extra click from the HTML file.
 
 Other formats, if you want them:
 
@@ -56,7 +56,7 @@ dpdp-web-check example.com --format text --out   # plain terminal text, colours 
 npx skills add protevixinfosec/dpdp-web-check
 ```
 
-This installs a `SKILL.md` that teaches the agent how to invoke the CLI with `--format json`, interpret the structured findings, and — critically — never claim a passing score means "DPDP compliant." The skill is agent-agnostic: works in Claude Code, and anywhere else that reads SKILL.md files.
+This installs a `SKILL.md` that teaches the agent how to invoke the CLI with `--format json`, interpret the structured findings, and critically never claim a passing score means "DPDP compliant." The skill is agent-agnostic: works in Claude Code, and anywhere else that reads SKILL.md files.
 
 Without the skill installed, any agent with shell access can still call it directly:
 
@@ -173,6 +173,6 @@ Checks that produce noise, or that require active probing, will be declined.
 
 Built by [Protevix Infosec](https://protevixinfosec.com), Pune.
 
-We also run [KScan](https://kscan.protevixinfosec.com), a paid automated web application security assessment that goes considerably deeper than this — actual vulnerability discovery across the application, with a written analyst narrative. `dpdp-web-check` is free and always will be. It is not a trial, a demo, or a lead-capture form. It does what it says and it does not phone home.
+We also run [KScan](https://kscan.protevixinfosec.com), a paid automated web application security assessment that goes considerably deeper than this actual vulnerability discovery across the application, with a written analyst narrative. `dpdp-web-check` is free and always will be. It is not a trial, a demo, or a lead-capture form. It does what it says and it does not phone home.
 
 Apache-2.0.
